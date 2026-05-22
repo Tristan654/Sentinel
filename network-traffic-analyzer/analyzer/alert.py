@@ -1,6 +1,9 @@
 #----------------Import------------
 from datetime import datetime
 import logging
+
+
+
 #----------------Class-------------
 class Alert:
     def __init__(self, alert_type, src_ip, description):

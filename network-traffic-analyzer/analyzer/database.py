@@ -2,6 +2,8 @@
 from alert import Alert
 from config import DB_PATH
 import sqlite3
+
+
 #--------------Function -----------
 def init_db():
     database = sqlite3.connect(DB_PATH)
