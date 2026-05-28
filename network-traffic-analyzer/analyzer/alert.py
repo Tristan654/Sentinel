@@ -6,7 +6,7 @@ import logging
 
 #----------------Class-------------
 class Alert:
-    def __init__(self, alert_type, src_ip, description):
+    def __init__(self, alert_type : str, src_ip : str, description : str):
         self.alert_type  = alert_type
         self.src_ip      = src_ip
         self.description = description
