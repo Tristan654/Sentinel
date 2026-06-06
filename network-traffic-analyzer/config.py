@@ -15,3 +15,4 @@ SSH_BRUTE_WINDOW    = 60      # seconds
 # --- DNS Exfiltration Detection --------------------------------------
 DNS_MAX_DOMAIN_LEN  = 50      # max characters in domain name
 DNS_REQUEST_RATE    = 10      # max requests per second per IP
+DNS_WINDOW = 10  # seconds
