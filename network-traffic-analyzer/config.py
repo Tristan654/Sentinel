@@ -1,5 +1,5 @@
 # --- Network Interface ----------------------------------------------
-INTERFACE = "eth0"
+INTERFACE = "wlan0"
 
 # ---Database ---------------------------------------------------------
 DB_PATH = "alerts.db"

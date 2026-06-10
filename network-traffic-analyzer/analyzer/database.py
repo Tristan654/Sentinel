@@ -1,5 +1,5 @@
 #----------------Import------------
-from alert import Alert
+from analyzer.alert import Alert
 from config import DB_PATH
 import sqlite3
 

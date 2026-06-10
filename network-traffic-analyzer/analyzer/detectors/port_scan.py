@@ -3,8 +3,8 @@ from scapy.all import IP,TCP
 from datetime import datetime
 from collections import defaultdict
 from config import PORT_SCAN_WINDOW,PORT_SCAN_THRESHOLD
-from alert import log_alert,Alert
-from database import insert_alert
+from analyzer.alert import Alert,log_alert
+from analyzer.database import insert_alert
 
 #------------Variable-----------
 tracker = defaultdict(list) # c un {} dont les valeurs sont des listes si plusieurs fois la meme clé
@@ -14,6 +14,7 @@ tracker = defaultdict(list) # c un {} dont les valeurs sont des listes si plusie
 def detect(packet):
     if not (IP in packet and TCP in packet):
         return
+    print("TCP packet detected")
     if packet[TCP].flags == "S" :
         # "123.23.34.1" = [(temps1, port1), (temps2, port2), (temps3, port3)]
         src_ip = packet[IP].src

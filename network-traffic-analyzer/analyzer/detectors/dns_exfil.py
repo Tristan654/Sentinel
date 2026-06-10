@@ -1,8 +1,8 @@
 #---Import---
-from scapy import DNS, DNSQR, IP
+from scapy.all import DNS, DNSQR, IP
 from config import DNS_MAX_DOMAIN_LEN,DNS_REQUEST_RATE,DNS_WINDOW
-from alert import log_alert, Alert
-from database import insert_alert
+from analyzer.alert import Alert,log_alert
+from analyzer.database import insert_alert
 from collections import defaultdict
 from datetime import datetime 
 #---Config---
